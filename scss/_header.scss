@@ -1,0 +1,315 @@
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 81px;
+}   
+
+// -------- Site logo ---------
+
+.site-logo{
+    width: 70px;
+    height: 70px;
+}
+
+.logo__img{
+    object-fit: cover;
+}
+
+
+// --------- Site nav --------
+
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__item:not(:first-child){
+    padding-left: 40px;
+}
+
+.nav__link{
+    position: relative;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+    padding: 28px 0;
+    
+    
+    &::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #0082F4;
+        bottom: 0;
+        left: 0;
+        transition: all 0.4s ease;
+    }
+}
+
+.nav__link--active{
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #0082F4;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        width: 54px;
+        height: 2px;
+        background-color: #0082F4;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+// ----------- Hover part of header --------
+
+
+.nav__item:hover > .nav__link::before{
+    width: 100%;
+}
+
+
+// --------- Site button ----------
+
+
+.btn__link{
+    background: #0082F4;
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    cursor: pointer; 
+}
+
+.btn__link{
+    text-decoration: none;   
+}
+
+
+.hr{
+    background-color: #0082F4;
+    opacity: 0.1;
+}
+
+.btn__link:hover{
+    opacity: 0.6;
+}
+
+
+// ----------- Header-menu ------------
+
+
+
+.header__menu{
+    display: none;
+}
+
+
+
+// ------------ Responsive part of business -------------
+
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    
+
+    // -------- Site logo ---------
+
+    
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }   
+
+    .site-logo{
+        width: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+
+    .nav__list{
+        margin-right: 40px;
+    }
+
+    .nav__item:not(:first-child){
+        padding-left: 30px;
+    }
+
+    .nav__link{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header__button{
+        display: none;
+    }
+
+    .hr{
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    
+
+    // -------- Site logo ---------
+
+    
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }   
+
+    .site-logo{
+        width: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+
+    .nav__list{
+        margin-right: 40px;
+    }
+
+    .nav__item:not(:first-child){
+        padding-left: 30px;
+    }
+
+    .nav__link{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header__button{
+        display: none;
+    }
+
+    .hr{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    
+
+    // -------- Site logo ---------
+
+    
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }   
+
+    .site-logo{
+        width: 40px;
+        height: 40px;
+        padding-left: 30px;
+    }
+
+    .nav__list{
+        display: none;
+    }
+
+    .header__button{
+        display: none;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    .header__menu{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .header__menu--btn{
+        border: none;
+        padding: 3px 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+    }
+
+    .header__menu--img{
+        width: 25px;
+        height: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 0px) and (max-width: 576px){
+    
+
+    // -------- Site logo ---------
+
+    
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }   
+
+    .site-logo{
+        width: 30px;
+        height: 30px;
+        padding-left: 30px;
+        margin-top: -20px;
+    }
+
+    .nav__list{
+        display: none;
+    }
+
+    .header__button{
+        display: none;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    .header__menu{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .header__menu--btn{
+        border: none;
+        padding: 3px 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+    }
+
+    .header__menu--img{
+        width: 25px;
+        height: 20px;
+    }
+
+}

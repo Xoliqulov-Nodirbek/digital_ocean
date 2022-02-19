@@ -1,0 +1,78 @@
+.sing-up__inner{
+    background-color: rgba(232, 236, 255, 0.3);
+}
+
+.email__part--title{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 37px;
+    text-align: center;
+    color: #058AFF;
+    padding: 75px 0 15px 0;
+}
+
+.email__part--text{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.email__submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 75px 0;
+}
+
+.email__submit--box{
+    display: flex;
+    justify-content: space-between;
+    width: 487px;
+    padding: 20px 0;
+    border: 1px solid #058AFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.email__submit--input{
+    margin-left: 20px;
+    padding: 10px 20px 10px 70px;
+    border: none;
+    background-color: #F8F9FF;
+    background-image: url("../images/MAIL\ LOGO.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 5px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.email__submit--btn{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding: 8px 30px;
+    background: #0082F4;
+    border-radius: 10px;
+    border: none;
+    margin: 0 30px 0 10px;
+    cursor: pointer;
+}
+
+
+// ------------ Hover part of Email__submit ----------
+
+
+.email__submit--btn:hover{
+    opacity: 0.6;
+}
+
