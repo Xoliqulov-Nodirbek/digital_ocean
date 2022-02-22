@@ -50,9 +50,13 @@
     background-repeat: no-repeat;
     background-position: 20px 5px;
     color: #000;
-    font-family: Roboto;
+    font-family: "Roboto" , "Arial" , sans-serif;
     font-size: 17px;
     font-weight: 400;
+
+    &:focus{
+        outline: none;
+    }
 }
 
 .email__submit--btn{
