@@ -530,8 +530,8 @@
 }
 
 .part__element:hover {
-  -webkit-box-shadow: 0 0 8px 2px black;
-          box-shadow: 0 0 8px 2px black;
+  -webkit-box-shadow: 0 0 8px 2px grey;
+          box-shadow: 0 0 8px 2px grey;
 }
 
 .customers__inner {
